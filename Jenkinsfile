@@ -17,5 +17,12 @@ pipeline {
         sh 'npm run test-provider'
       }
     }
+
+    stage('Can I deploy?') {
+      steps {
+        sh 'npm run can-i-deploy'
+      }
+    }
+
   }
 }
