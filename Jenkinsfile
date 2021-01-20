@@ -17,6 +17,5 @@ pipeline {
         sh 'npm run test-provider'
       }
     }
-    
   }
 }
