@@ -26,7 +26,7 @@
     "request-promise-native": "1.0.5"
   },
   "devDependencies": {
-    "@pact-foundation/pact-node": "5.2.1",
+    "@pact-foundation/pact-node": "10.11.1",
     "chai": "4.1.2",
     "mocha": "4.0.1",
     "pact": "4.2.1",
