@@ -12,7 +12,7 @@ const opts = {
   providerStatesSetupUrl: 'http://localhost:3001/test/setup', // the url to call to set up states
   pactUrls: ['http://pact-broker:9292/pacts/provider/ProductService/consumer/Client/latest'], // the pacts to test against
   publishVerificationResult: true,
-  providerVersion: '1.0.0'
+  providerVersion: '1.0.0'.concat(process.env.GIT_COMMIT)
 }
 
 pact.verifyPacts(opts).then(() => {
