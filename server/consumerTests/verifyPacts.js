@@ -9,6 +9,7 @@ const opts = {
   pactUrls: ['http://pact-broker:9292/pacts/provider/ProductService/consumer/Client/latest'], // the pacts to test against
   publishVerificationResult: true,
   providerVersion: '1.0.0_'.concat(process.env.GIT_COMMIT)
+  tags: [process.env.BRANCH_NAME]
 }
 
 pact.verifyPacts(opts).then(() => {
