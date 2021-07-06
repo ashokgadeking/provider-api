@@ -10,7 +10,7 @@ app.post('/test/setup', (req, res) => {
   switch (state) {
     case 'it has one product':
       products._flush()
-      products.create({ name: 'Foo', img: 'https://webshop.com/img/foo.png', price: 1, stock: 1})
+      products.create({ name: 'Boo', img: 'https://webshop.com/img/foo.png', price: 1, stock: 1})
       break
     case 'it has multiple products with different prices':
       products._flush()
